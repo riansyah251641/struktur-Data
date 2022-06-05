@@ -1,0 +1,23 @@
+vector<int> adjList[N];
+bool visited[N];
+
+void bfs(int startNode)
+{
+    queue<int> q;
+    q.push(startNode);
+    visited[startNode] = 1;
+    while (!q.empty()) // ada yang tau kenapa seperti ini?
+    {
+        int curNode = q.front();
+        q.pop();
+        for (int i = 0 ; i < adj[curNode].size() ; i++) // sama seperti DFS
+        {
+            int nextNode = adj[curNode][i];
+            if (!visited[nextNode])
+            {
+                q.push(nextNode);
+                visited[nextNode] = 1; //Perhatikan baris ini untuk trivia question
+            }
+        }
+    }
+}
