@@ -1,0 +1,25 @@
+assign (n+1,vector<int>());
+typedef pair<int, int> pii; // memberi nama suatu fungsi
+
+fungsi kode c
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+fungsi kode c++
+
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+
+#include <bits/stdc++.h>
+
+memset ( membuat semua array jado nol)
+  memset(dist, -1, sizeof(dist));
+  
+  
+
