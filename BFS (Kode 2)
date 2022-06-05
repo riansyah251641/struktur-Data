@@ -1,0 +1,74 @@
+#include <bits/stdc++.h>
+using namespace std;
+vector<vector<int>> adj;
+vector<int> visited;
+
+int bfs(int startNode)
+{
+    visited.assign(adj.size() + 1, 0);
+    int totalHasil = 0;
+    queue<int> q;
+    q.push(startNode);
+    visited[startNode] = 1;
+    while (!q.empty())
+    {
+        int count = 0;
+        int curNode = q.front();
+        q.pop();
+        for (int i = 0; i < adj[curNode].size(); i++)
+        {
+            int nextNode = adj[curNode][i];
+            if (!visited[nextNode])
+            {
+                q.push(nextNode);
+                count++;
+                visited[nextNode] = 1;
+            }
+        }
+        int limit = 1;
+        while (limit < count + 1)
+        {
+            limit *= 2;
+            totalHasil++;
+        }
+        totalHasil += count;
+    }
+    bool cek = true;
+    for (int i = 1; i < adj.size(); i++)
+    {
+        if (visited[i] == 0)
+        {
+            cek = false;
+        }
+    }
+    if (cek == true)
+    {
+        return totalHasil;
+    }
+    else
+    {
+        return 99999;
+    }
+}
+int main()
+{
+    int n;
+    cin >> n;
+    adj.assign(n + 1, vector<int>());
+    visited.assign(n + 1, 0);
+    for (int i = 1; i < n; i++)
+    {
+        int a, b;
+        cin >> a >> b;
+        adj[a].push_back(b);
+        adj[b].push_back(a);
+    }
+    int hasil = 9999999;
+    for (int i = 1; i <= n; i++)
+    {
+        hasil = min(hasil, bfs(i));
+    }
+    cout << hasil << endl;
+}
+
+//ngopid 91
