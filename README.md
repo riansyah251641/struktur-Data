@@ -7,4 +7,4 @@ Throughout this course, we will explore different data structures such as arrays
 
 This repository serves as a record of my progress and learning throughout the course. I hope that others may find it useful as a resource for learning about data structures and algorithms.
 
-### Hope you like and learn from my code 
+### If you would like to contribute to this project, please feel free to submit a pull request or open an issue. We welcome contributions from all members of the community.
