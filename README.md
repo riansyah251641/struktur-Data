@@ -1,4 +1,4 @@
-# Data Structure Course semester 2
+# Data Structure Course Institut Teknologi Sepuluh Nopember
 
 ## Introduction
 Welcome to the repository for my Data Structure course! This repository contains the code and materials for the course, which covers various data structures and algorithms.
