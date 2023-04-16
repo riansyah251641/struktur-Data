@@ -6,3 +6,5 @@ Welcome to the repository for my Data Structure course!, as a student in Informa
 Throughout this course, we will explore different data structures such as arrays, linked lists, stacks, queues, trees, and graphs. We will also learn about algorithms for searching, sorting, and traversing these data structures.
 
 This repository serves as a record of my progress and learning throughout the course. I hope that others may find it useful as a resource for learning about data structures and algorithms.
+
+### Hope you like and learn from my code 
